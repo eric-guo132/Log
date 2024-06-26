@@ -1,6 +1,7 @@
 # Log--HTML Format
 # Instructions
 # Using methods in other classes
+
  Logger& logger = Logger::getInstance();
  
  logger.init("logfile.html");
@@ -8,9 +9,13 @@
  std::string temp = "初始化成功";
  
  int tempnum = 10;
+ 
  logger.log(Logging::LOG_INFO, "This is an informational message. %s", temp.c_str());
+ 
  logger.log(Logging::LOG_WARNING, "This is a warning message. %d", tempnum);
+ 
  logger.log(Logging::LOG_ERROR, "This is an error message.");
+ 
  logger.close();
 
  # Record results
