@@ -2,6 +2,7 @@
 # Instructions
 # Using methods in other classes
  Logger& logger = Logger::getInstance();
+ 
  logger.init("logfile.html");
  std::string temp = "初始化成功";
  int tempnum = 10;
